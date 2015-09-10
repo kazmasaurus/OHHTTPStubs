@@ -88,6 +88,8 @@
 		221C34A71B0CCF9D00FCA8FF /* empty.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 221C34A61B0CCF9D00FCA8FF /* empty.bundle */; };
 		221C34A81B0CCF9D00FCA8FF /* empty.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 221C34A61B0CCF9D00FCA8FF /* empty.bundle */; };
 		221C34A91B0CCFF200FCA8FF /* OHPathHelpersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 221C34A41B0CCF0600FCA8FF /* OHPathHelpersTests.m */; };
+		315932881BA22D0F0005E526 /* OHHTTPStubsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0955699A1B90E4EA00503ADC /* OHHTTPStubsSwift.swift */; };
+		315932891BA22D210005E526 /* OHHTTPStubsSwift.swift in Headers */ = {isa = PBXBuildFile; fileRef = 0955699A1B90E4EA00503ADC /* OHHTTPStubsSwift.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		47AF337B1A3775B600158C9F /* emptyfile.json in Resources */ = {isa = PBXBuildFile; fileRef = 47AF337A1A37757B00158C9F /* emptyfile.json */; };
 		47AF337C1A3775B600158C9F /* emptyfile.json in Resources */ = {isa = PBXBuildFile; fileRef = 47AF337A1A37757B00158C9F /* emptyfile.json */; };
 		4DD13AB8422F0151AF227209 /* libPods-OHHTTPStubs iOS Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 446DA13BA37A8466FF4F9D35 /* libPods-OHHTTPStubs iOS Tests.a */; };
@@ -123,6 +125,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 095981C119806A7900807DBE;
 			remoteInfo = "OHHTTPStubs Mac";
+		};
+		315932861BA22D080005E526 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09110A3919805F4800D175E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 725CD99A1A9EB65100F84C8B;
+			remoteInfo = "OHHTTPStubs iOS Framework";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -188,6 +197,8 @@
 		1D6DB84F1B763B7A00FCF855 /* OHHTTPStubs+Mocktail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OHHTTPStubs+Mocktail.m"; sourceTree = "<group>"; };
 		221C34A41B0CCF0600FCA8FF /* OHPathHelpersTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHPathHelpersTests.m; sourceTree = "<group>"; };
 		221C34A61B0CCF9D00FCA8FF /* empty.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = empty.bundle; sourceTree = "<group>"; };
+		3159327E1BA22CD90005E526 /* OHHTTPStubs iOS Swift Tools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "OHHTTPStubs iOS Swift Tools.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		315932821BA22CD90005E526 /* OHHTTPStubs iOS Swift-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "OHHTTPStubs iOS Swift-Info.plist"; path = "../OHHTTPStubs iOS Swift Tools/OHHTTPStubs iOS Swift-Info.plist"; sourceTree = "<group>"; };
 		446DA13BA37A8466FF4F9D35 /* libPods-OHHTTPStubs iOS Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OHHTTPStubs iOS Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47AF337A1A37757B00158C9F /* emptyfile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emptyfile.json; sourceTree = "<group>"; };
 		725CD99B1A9EB65100F84C8B /* OHHTTPStubs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OHHTTPStubs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -245,6 +256,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3159327A1BA22CD90005E526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		725CD9971A9EB65100F84C8B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -276,6 +294,7 @@
 				095981D219806A7900807DBE /* OHHTTPStubs Mac Tests.xctest */,
 				725CD99B1A9EB65100F84C8B /* OHHTTPStubs.framework */,
 				093442F91B80EC4A00A91535 /* OHHTTPStubs iOS Fmk Tests.xctest */,
+				3159327E1BA22CD90005E526 /* OHHTTPStubs iOS Swift Tools.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -413,6 +432,7 @@
 			children = (
 				093442DC1B80EC3B00A91535 /* OHHTTPStubs iOS-Info.plist */,
 				095981C619806A7900807DBE /* OHHTTPStubs Mac-Info.plist */,
+				315932821BA22CD90005E526 /* OHHTTPStubs iOS Swift-Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -462,6 +482,14 @@
 				0959820119806B1E00807DBE /* OHHTTPStubsResponse+HTTPMessage.h in Headers */,
 				094906DF1B7F60EE00B047DA /* OHHTTPStubs+Mocktail.h in Headers */,
 				095B1AD71AE3138C009D1B56 /* OHPathHelpers.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3159327B1BA22CD90005E526 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				315932891BA22D210005E526 /* OHHTTPStubsSwift.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +605,25 @@
 			productReference = 095981D219806A7900807DBE /* OHHTTPStubs Mac Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		3159327D1BA22CD90005E526 /* OHHTTPStubs iOS Swift Tools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 315932851BA22CD90005E526 /* Build configuration list for PBXNativeTarget "OHHTTPStubs iOS Swift Tools" */;
+			buildPhases = (
+				315932791BA22CD90005E526 /* Sources */,
+				3159327A1BA22CD90005E526 /* Frameworks */,
+				3159327B1BA22CD90005E526 /* Headers */,
+				3159327C1BA22CD90005E526 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				315932871BA22D080005E526 /* PBXTargetDependency */,
+			);
+			name = "OHHTTPStubs iOS Swift Tools";
+			productName = "OHHTTPStubs iOS Swift Tools";
+			productReference = 3159327E1BA22CD90005E526 /* OHHTTPStubs iOS Swift Tools.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		725CD99A1A9EB65100F84C8B /* OHHTTPStubs iOS Framework */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 725CD9B21A9EB65200F84C8B /* Build configuration list for PBXNativeTarget "OHHTTPStubs iOS Framework" */;
@@ -610,6 +657,9 @@
 					095981D119806A7900807DBE = {
 						TestTargetID = 095981C119806A7900807DBE;
 					};
+					3159327D1BA22CD90005E526 = {
+						CreatedOnToolsVersion = 7.0;
+					};
 					725CD99A1A9EB65100F84C8B = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -633,6 +683,7 @@
 				093442DD1B80EC4A00A91535 /* OHHTTPStubs iOS Fmk Tests */,
 				095981C119806A7900807DBE /* OHHTTPStubs Mac Framework */,
 				095981D119806A7900807DBE /* OHHTTPStubs Mac Tests */,
+				3159327D1BA22CD90005E526 /* OHHTTPStubs iOS Swift Tools */,
 			);
 		};
 /* End PBXProject section */
@@ -675,6 +726,13 @@
 				47AF337C1A3775B600158C9F /* emptyfile.json in Resources */,
 				221C34A81B0CCF9D00FCA8FF /* empty.bundle in Resources */,
 				094906DA1B7F523900B047DA /* login.tail in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3159327C1BA22CD90005E526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -857,6 +915,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		315932791BA22CD90005E526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				315932881BA22D0F0005E526 /* OHHTTPStubsSwift.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		725CD9961A9EB65100F84C8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -888,6 +954,11 @@
 			isa = PBXTargetDependency;
 			target = 095981C119806A7900807DBE /* OHHTTPStubs Mac Framework */;
 			targetProxy = 095981D519806A7900807DBE /* PBXContainerItemProxy */;
+		};
+		315932871BA22D080005E526 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 725CD99A1A9EB65100F84C8B /* OHHTTPStubs iOS Framework */;
+			targetProxy = 315932861BA22D080005E526 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1173,6 +1244,67 @@
 			};
 			name = Release;
 		};
+		315932831BA22CD90005E526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OHHTTPStubs iOS Swift Tools/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AliSoftware.OHHTTPStubs-iOS-Swift-Tools";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		315932841BA22CD90005E526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "OHHTTPStubs iOS Swift Tools/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AliSoftware.OHHTTPStubs-iOS-Swift-Tools";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		725CD9AE1A9EB65200F84C8B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1275,6 +1407,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		315932851BA22CD90005E526 /* Build configuration list for PBXNativeTarget "OHHTTPStubs iOS Swift Tools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				315932831BA22CD90005E526 /* Debug */,
+				315932841BA22CD90005E526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		725CD9B21A9EB65200F84C8B /* Build configuration list for PBXNativeTarget "OHHTTPStubs iOS Framework" */ = {
 			isa = XCConfigurationList;
